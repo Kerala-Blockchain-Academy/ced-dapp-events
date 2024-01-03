@@ -3,6 +3,7 @@ pragma solidity 0.8.19;
 
 contract Cert {
     address admin;
+    event Issued(string indexed, uint256, string);
 
     constructor() {
         admin = msg.sender;
@@ -30,5 +31,6 @@ contract Cert {
         string memory _date
     ) public onlyAdmin {
         Certificates[_id] = Certificate(_name, _course, _grade, _date);
+        emit Issued(_course, _id, _grade);
     }
 }
