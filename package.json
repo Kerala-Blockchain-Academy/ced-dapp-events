@@ -6,6 +6,7 @@
     "dev": "nodemon ./src/bin/server.js",
     "start": "node ./src/bin/server.js",
     "events": "nodemon ./src/events.js",
+    "logs": "node ./src/logs.js",
     "format": "npx prettier . --write",
     "node": "npx hardhat node",
     "test": "npx hardhat test",
