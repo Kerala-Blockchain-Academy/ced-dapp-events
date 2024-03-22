@@ -51,6 +51,6 @@ Start the event listener (new terminal)
 
 ```bash
 npm run events
+```
 
 Open [browser](http://127.0.0.1:8080) for UI
-```
